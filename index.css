@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/assets/fonts/Cabin/Cabin-VariableFont_wdth,wght.ttf') format('ttf');
+    src: url('/assets/fonts/Cabin/Cabin-Italic-VariableFont_wdth,wght.ttf') format('ttf');
+}
+
+body {
+
+    --yellow: #BFA041;
+    --gray: #3A3A3A;
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+
+}
+
+
+.header {
+
+    height: 7rem;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: var(--gray);
+
+}
+
+.header .icon {
+    margin-left: 2rem;
+}
+
+.header ul {
+    margin-left: auto;
+    list-style: none;
+    text-decoration: none;
+}
+
+li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header button {
+    margin: 0 2rem;
+}
+
+button {
+    height: 4rem;
+    width: 8rem;
+    color: white;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.background {
+    object-fit: cover;
+    height: calc(100vh - 7rem) !important;
+    width: 100%;
+
+    filter: brightness(50%)
+}
+
+.text-cont {
+    position: absolute;
+    top: calc(7rem + 10rem);
+    margin-left: 10vw;
+}
+
+.text-cont p:nth-child(1) {
+    color: var(--yellow);
+}
+
+.text-cont h1 {
+    color: white;
+
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.text-cont h1:nth-child(3) {
+    color: var(--yellow);
+}
+
+.text-cont p:nth-child(4) {
+    color: white;
+    width: 32rem;
+    font-size: 18px;
+}
+
+.counter {
+    width: 40rem !important;
+    height: 10rem !important;
+
+    position: absolute;
+
+    right: 0;
+    bottom: -5rem;
+
+    background-color: var(--yellow);
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+
+    
+}
+
+.counter .element {
+    color: white;
+
+    text-align: center;
+
+}
+
+.element p {
+    margin: 0;
+
+    font-weight: 100;
+
+}
+
+.element h1 {
+    margin: 0;
+
+    font-size: 35px;
+
+}
